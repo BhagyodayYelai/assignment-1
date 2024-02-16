@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="Style.css">
+    <link rel="Shortcut icon" href="th.jpg" type="icon">
+
+</head>
+<body>
+    <header>
+        <div class="nav" id="home">
+            <h1>Crispy Crust Pizzeria</h1>
+            <div class="nav-part2">
+                <h2>
+                    Home
+                </h2>
+                <h2>
+                    Order Here
+                </h2>
+                <h2>
+                    Contact us
+                </h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <div class="content">
+            <div class="Pform">
+                <form method="post" action="index.html">
+                    <fieldset>
+                        <legend>Enter Your Personal Information</legend>
+                        <label>Name</label>
+                        <input type="text" name="f-name" placeholder="enter your name" required>
+
+                        <label for="phone">Phone</label>
+                        <input type="number" name="phone-number" pattern="[0-9]{10}" placeholder="enter your phone-number" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="someone@example.com">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Details of Pizza</legend>
+                        <label for="No. of Pizza">Number of Pizzas</label>
+                        <input type="number" name="No. of Pizza" min="1" required>
+
+                        <label for="Size of Pizza">Pizza-Size</label>
+                        <select id="Size of Pizza" name="Size of Pizza" required>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="Large">Large</option>
+                            <option value="Extralarge">Extra-large</option>
+                        </select>
+                    
+                   
+                    
+                    <label for="Shape of Pizza">Shape</label>
+                    <input type="radio" name="Shape of Pizza" value="round" checked>
+                    <label for="round">Round</label>
+                    <input type="radio" name="Shape of Pizza" value="square" checked>
+                    <label for="square">Square</label>
+                    
+        <br/>
+                    
+                    <label for="toppings">Toppings</label>
+                    <textarea id="toppings" name="toppings" placeholder="Enter your toppings"></textarea>
+        <br>
+                    <label for="crust-type">Crust type</label>
+                    <select id="crust-type" name="crust-type">
+                        <option value="thin-crust">Thin crust</option>
+                        <option value="regular">Regular</option>
+                        <option value="thick-crust">Thick crust</option>
+                        <option value="cheesy-crust">Cheesy crust</option>
+                        <option value="hand-tossed">Hand tossed</option>
+                        <option value="soft-pan">Soft pan</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Types of Delivery Methods</legend>
+                    <label>Delivery Methods</label>
+                    <input type="radio" id="takeout" name="method of delivery" value="takeout">
+                    <label for="takeout">Takeout</label>
+                    <input type="radio" id="delivery" name="method of delivery" value="delivery" checked>
+                    <label for="delivery">Delivery</label>
+                    <input type="radio" id="eat-in" name="method of delivery" value="eat-in">
+                    <label for="eat-in">Eat-in</label>
+                </fieldset>
+                
+                <input type="submit" value="Place Order Here">
+                <input type="reset" value="Reset Form">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="credit">created <span> for the class project </span> | all rights reserved</div>
+        </footer>
+    
+    </main>
+    
+</body>
+</html>
